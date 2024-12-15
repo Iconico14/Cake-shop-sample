@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exquisite Cakes - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=CMU+Serif&display=swap" rel="stylesheet">
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            font-family: 'CMU Serif', serif;
+            background-color: #FFF5F3;
+            color: #8B4513;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #F8EDEB;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #8B4513;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #F4A460;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+        }
+
+        .hero a {
+            text-decoration: none;
+            background-color: #FFDAB9;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #8B4513;
+            font-weight: bold;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .hero a:hover {
+            background-color: #F4A460;
+            transform: scale(1.05);
+        }
+
+        .hero img {
+            width: 400px;
+            height: auto;
+        }
+
+        /* Bestsellers Section */
+        .featured-cakes {
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .featured-cakes h2 {
+            text-align: center;
+            color: #8B4513;
+            margin-bottom: 30px;
+        }
+
+        .cake-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .cake-item {
+            width: 220px;
+            height: 320px;
+            text-align: center;
+            background-color: #F8EDEB;
+            border: 1px solid #E5C7B7;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .cake-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .cake-item img {
+            width: 100%;
+            height: 150px;
+            border-radius: 8px;
+        }
+
+        .cake-item p {
+            margin: 10px 0;
+            color: #8B4513;
+        }
+
+        .cake-item button {
+            width: 90%;
+            padding: 8px;
+            background-color: #FFDAB9;
+            color: #8B4513;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cake-item button:hover {
+            background-color: #F4A460;
+            transform: scale(1.05);
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #F8EDEB;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #8B4513;
+        }
+
+        footer a:hover {
+            color: #F4A460;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="#" alt="Exquisite Cakes Logo" style="height: 50px;"> <!-- Logo Placeholder -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="productdetail.html">Product Detail</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="story.html">Our Story</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to Exquisite Cakes</h1>
+            <p>Your destination for world-famous, delicious cakes crafted with love and perfection.</p>
+            <a href="products.html">Explore Our Cakes</a>
+        </div>
+        <div>
+            <img src="#" alt="Hero Image"> <!-- Hero Placeholder -->
+        </div>
+    </section>
+
+    <!-- Bestsellers Section -->
+    <section class="featured-cakes">
+        <h2>Our Bestsellers</h2>
+        <div class="cake-gallery">
+            <!-- Repeat Cake Items -->
+            <div class="cake-item">
+                <img src="#" alt="Classic Chocolate Cake"> <!-- Placeholder -->
+                <p>Classic Chocolate Cake</p>
+                <button onclick="addToCart('Classic Chocolate Cake')">Add to Cart</button>
+            </div>
+            <!-- Repeat the above div for all 10 bestsellers -->
+            <div class="cake-item">
+                <img src="#" alt="Vanilla Raspberry Delight">
+                <p>Vanilla Raspberry Delight</p>
+                <button onclick="addToCart('Vanilla Raspberry Delight')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="#" alt="Red Velvet Bliss">
+                <p>Red Velvet Bliss</p>
+                <button onclick="addToCart('Red Velvet Bliss')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="#" alt="Strawberry Shortcake">
+                <p>Strawberry Shortcake</p>
+                <button onclick="addToCart('Strawberry Shortcake')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="#" alt="Lemon Zest Cake">
+                <p>Lemon Zest Cake</p>
+                <button onclick="addToCart('Lemon Zest Cake')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="#" alt="Caramel Crunch">
+                <p>Caramel Crunch</p>
+                <button onclick="addToCart('Caramel Crunch')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="#" alt="Blueberry Bliss">
+                <p>Blueberry Bliss</p>
+                <button onclick="addToCart('Blueberry Bliss')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="#" alt="Peach Velvet Cake">
+                <p>Peach Velvet Cake</p>
+                <button onclick="addToCart('Peach Velvet Cake')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="#" alt="Mocha Cream Cake">
+                <p>Mocha Cream Cake</p>
+                <button onclick="addToCart('Mocha Cream Cake')">Add to Cart</button>
+            </div>
+            <div class="cake-item">
+                <img src="#" alt="Pineapple Paradise">
+                <p>Pineapple Paradise</p>
+                <button onclick="addToCart('Pineapple Paradise')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Exquisite Cakes. Crafted with love, one cake at a time.</p>
+        <p>Follow us on 
+            <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <script>
+        let cart = [];
+
+        function addToCart(productName) {
+            cart.push(productName);
+            alert(productName + ' has been added to your cart!');
+        }
+    </script>
+</body>
+
+</html>
